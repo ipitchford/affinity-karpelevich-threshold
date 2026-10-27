@@ -4,8 +4,8 @@
 Usage (from the repository root):  python3 -B code/replay_all.py
 Each verifier in code/ is run as  python3 -B code/<script>.py --out <tmp>/<script>
 and every JSON receipt it writes must equal the shipped file in receipts/
-after removing timing fields (keys containing "seconds"), which depend on the
-machine. The stand-alone checker is then run on the shipped and on the
+after removing timing fields (keys containing "seconds") and the interpreter
+version field "python", which depend on the machine. The stand-alone checker is then run on the shipped and on the
 regenerated exterior certificates. Exit status 0 means everything matched.
 Standard library only. Run without -O: the verifiers rely on assert.
 """
@@ -23,7 +23,7 @@ VERIFIERS = ["verify_affine_counterexample", "audit_karpelevich", "audit_all_dim
 
 def strip(x):
     if isinstance(x, dict):
-        return {k: strip(v) for k, v in x.items() if "seconds" not in k}
+        return {k: strip(v) for k, v in x.items() if "seconds" not in k and k != "python"}
     if isinstance(x, list):
         return [strip(v) for v in x]
     return x
@@ -66,7 +66,7 @@ def main():
         for f in failures:
             print("  " + f)
         sys.exit(1)
-    print("PASS: every receipt reproduced (timing fields excluded); certificates checked")
+    print("PASS: every receipt reproduced (timing and interpreter-version fields excluded); certificates checked")
 
 
 if __name__ == "__main__":

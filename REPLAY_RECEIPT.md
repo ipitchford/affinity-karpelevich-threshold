@@ -4,7 +4,7 @@ Producer-side replay, 27 October 2026, macOS (Apple silicon), Python 3.11.14 via
 
 | Command | Result |
 |---|---|
-| `python3 -B code/replay_all.py` | PASS. All six receipts were regenerated in a temporary directory and match `receipts/`, excluding timing fields: affine_counterexample_verification, karpelevich_audit_result, all_dimensions_audit_result, extension_fingerprints, higher_dimension_certificates and exterior_certificates. `check_exterior_certificate.py` passed on both the shipped and the regenerated certificates (n = 4: 6 Farey pairs, 166 boxes; n = 5: 10 pairs, 352 boxes; n = 6: 12 pairs, 578 boxes). Wall time about 1.5 min. |
+| `python3 -B code/replay_all.py` | PASS. All six receipts were regenerated in a temporary directory and match `receipts/`, excluding timing fields and the interpreter-version field: affine_counterexample_verification, karpelevich_audit_result, all_dimensions_audit_result, extension_fingerprints, higher_dimension_certificates and exterior_certificates. `check_exterior_certificate.py` passed on both the shipped and the regenerated certificates (n = 4: 6 Farey pairs, 166 boxes; n = 5: 10 pairs, 352 boxes; n = 6: 12 pairs, 578 boxes). Wall time about 1.5 min. |
 | `python3 -B negative_controls.py` | PASS: all 11 corrupted inputs were rejected after an unmodified baseline passed. Wall time about 2.5 min. |
 | `python3 -O -B code/<verifier>.py` | Refuses to run, by design: the verifiers rely on `assert`. |
 | `pdflatex affinity_karpelevich.tex` (three runs) | 20 pages. No overfull boxes and no undefined references. Every page was inspected. |
