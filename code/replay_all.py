@@ -5,11 +5,14 @@ Usage (from the repository root):  python3 -B code/replay_all.py
 Each verifier in code/ is run as  python3 -B code/<script>.py --out <tmp>/<script>
 and every JSON receipt it writes must equal the shipped file in receipts/
 after removing timing fields (keys containing "seconds") and the interpreter
-version field "python", which depend on the machine. The stand-alone checker is then run on the shipped and on the
+version field "python", which depend on the machine. Binary floating-point
+fields (decimal orientation values from libm) are compared to a relative
+tolerance of 1e-9; every exact field (integers, rationals, strings) must match. The stand-alone checker is then run on the shipped and on the
 regenerated exterior certificates. Exit status 0 means everything matched.
 Standard library only. Run without -O: the verifiers rely on assert.
 """
 import json
+import math
 import subprocess
 import sys
 import tempfile
@@ -29,6 +32,20 @@ def strip(x):
     return x
 
 
+def same(a, b):
+    """Exact equality, except that binary floats (decimal orientation fields
+    computed with libm, e.g. tanh and log) may differ in the last digits
+    between platforms; they are compared to a relative tolerance of 1e-9."""
+    if isinstance(a, float) or isinstance(b, float):
+        return isinstance(a, (int, float)) and isinstance(b, (int, float)) and \
+            math.isclose(a, b, rel_tol=1e-9, abs_tol=1e-12)
+    if isinstance(a, dict) and isinstance(b, dict):
+        return a.keys() == b.keys() and all(same(a[k], b[k]) for k in a)
+    if isinstance(a, list) and isinstance(b, list):
+        return len(a) == len(b) and all(same(x, y) for x, y in zip(a, b))
+    return a == b
+
+
 def main():
     if not __debug__:
         sys.exit("run without -O: the verifiers rely on assert")
@@ -46,7 +63,7 @@ def main():
                 ship = RECEIPTS / f.name
                 if not ship.exists():
                     failures.append(f"{name}: unexpected receipt {f.name}")
-                elif strip(json.loads(f.read_text())) != strip(json.loads(ship.read_text())):
+                elif not same(strip(json.loads(f.read_text())), strip(json.loads(ship.read_text()))):
                     failures.append(f"{name}: {f.name} differs from receipts/")
                 else:
                     print(f"match  {f.name}")
