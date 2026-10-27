@@ -1,0 +1,1 @@
+To the extent possible under law, the author (Anonymous) has waived all copyright and related rights in the original prose, manuscript, structured claims, figures and data of this package under CC0-1.0 (see LICENSE and LICENSE-CC0). Original code is released under the MIT licence (LICENSE-MIT). Cited works keep their own terms; see LICENSES.md.

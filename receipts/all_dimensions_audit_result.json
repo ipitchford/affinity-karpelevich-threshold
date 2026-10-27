@@ -1,0 +1,106 @@
+{
+  "status": "All exact independent checks passed",
+  "fixed_test_t": "2/7",
+  "fixed_test_eps": "1/101",
+  "scope": "Finite fingerprints; analytic proof separately audited for every n.",
+  "results": [
+    {
+      "n": 4,
+      "stationarity": true,
+      "characteristic_polynomial": true,
+      "escape_rate": true,
+      "triangle_ratio": true,
+      "enumerated_unoriented_cycles": 7,
+      "maximum_cycle_valuation": "2/3",
+      "unique_maximising_cycle": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "n": 5,
+      "stationarity": true,
+      "characteristic_polynomial": true,
+      "escape_rate": true,
+      "triangle_ratio": true,
+      "enumerated_unoriented_cycles": 37,
+      "maximum_cycle_valuation": "2/3",
+      "unique_maximising_cycle": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "n": 6,
+      "stationarity": true,
+      "characteristic_polynomial": true,
+      "escape_rate": true,
+      "triangle_ratio": true,
+      "enumerated_unoriented_cycles": 197,
+      "maximum_cycle_valuation": "2/3",
+      "unique_maximising_cycle": [
+        2,
+        3,
+        6
+      ]
+    },
+    {
+      "n": 7,
+      "stationarity": true,
+      "characteristic_polynomial": true,
+      "escape_rate": true,
+      "triangle_ratio": true,
+      "enumerated_unoriented_cycles": 1172,
+      "maximum_cycle_valuation": "2/3",
+      "unique_maximising_cycle": [
+        1,
+        2,
+        7
+      ]
+    },
+    {
+      "n": 8,
+      "stationarity": true,
+      "characteristic_polynomial": true,
+      "escape_rate": true,
+      "triangle_ratio": true,
+      "enumerated_unoriented_cycles": 8018,
+      "maximum_cycle_valuation": "2/3",
+      "unique_maximising_cycle": [
+        2,
+        3,
+        8
+      ]
+    },
+    {
+      "n": 9,
+      "stationarity": true,
+      "characteristic_polynomial": true,
+      "escape_rate": true,
+      "triangle_ratio": true
+    },
+    {
+      "n": 10,
+      "stationarity": true,
+      "characteristic_polynomial": true,
+      "escape_rate": true,
+      "triangle_ratio": true
+    },
+    {
+      "n": 11,
+      "stationarity": true,
+      "characteristic_polynomial": true,
+      "escape_rate": true,
+      "triangle_ratio": true
+    },
+    {
+      "n": 12,
+      "stationarity": true,
+      "characteristic_polynomial": true,
+      "escape_rate": true,
+      "triangle_ratio": true
+    }
+  ]
+}

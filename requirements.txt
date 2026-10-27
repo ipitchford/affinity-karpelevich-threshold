@@ -1,0 +1,5 @@
+# The exact verifiers, the certificate checker, the replay driver and the
+# negative controls use only the Python standard library (Python >= 3.11).
+# The figure script code/plot_geometry.py (illustration only) additionally needs:
+numpy
+matplotlib

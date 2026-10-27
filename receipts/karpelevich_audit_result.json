@@ -1,0 +1,104 @@
+{
+  "status": "All exact certificate checks passed",
+  "Q": [
+    [
+      -2768,
+      2727,
+      27,
+      14
+    ],
+    [
+      1427,
+      -2768,
+      1327,
+      14
+    ],
+    [
+      1327,
+      27,
+      -2768,
+      1414
+    ],
+    [
+      27,
+      27,
+      2727,
+      -2781
+    ]
+  ],
+  "alpha": 2781,
+  "characteristic_polynomial_ascending": [
+    0,
+    36880427375,
+    38259075,
+    11085,
+    1
+  ],
+  "eigenvalues": [
+    "0",
+    "-1595",
+    "-4745 + 450 sqrt(3) i",
+    "-4745 - 450 sqrt(3) i"
+  ],
+  "cycles": [
+    {
+      "cycle": "123",
+      "length": 3,
+      "ratio": "177853829/38529",
+      "integer_margin": 86416582,
+      "beta_decimal": 0.8866882408690622
+    },
+    {
+      "cycle": "124",
+      "length": 3,
+      "ratio": "2727/1427",
+      "integer_margin": 9785066,
+      "beta_decimal": 0.10752072441818551
+    },
+    {
+      "cycle": "134",
+      "length": 3,
+      "ratio": "1327/27",
+      "integer_margin": 183866,
+      "beta_decimal": 0.571090641685653
+    },
+    {
+      "cycle": "234",
+      "length": 3,
+      "ratio": "1327/27",
+      "integer_margin": 183866,
+      "beta_decimal": 0.571090641685653
+    },
+    {
+      "cycle": "1234",
+      "length": 4,
+      "ratio": "134027/1427",
+      "integer_margin": 185834040,
+      "beta_decimal": 0.5137479145484533
+    },
+    {
+      "cycle": "1243",
+      "length": 4,
+      "ratio": "134027/1427",
+      "integer_margin": 185834040,
+      "beta_decimal": 0.5137479145484533
+    },
+    {
+      "cycle": "1324",
+      "length": 4,
+      "ratio": "1760929/729",
+      "integer_margin": 93243080,
+      "beta_decimal": 0.7503300020735872
+    }
+  ],
+  "beta_strict_upper_bound": "9/10",
+  "x": "-1964/2781",
+  "inverse_y_squared_strict_lower_bound": "250000/2577987",
+  "squared_radical_comparison_margin": "19884434701/2215338990723",
+  "illustrative_decimals_only": {
+    "beta": 0.8866882408690622,
+    "lower_y_squared": 0.09697488777096239,
+    "boundary_y_squared": 0.094499417234154,
+    "strict_lower_excess": 0.002475470536808383
+  }
+}

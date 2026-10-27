@@ -1,0 +1,60 @@
+{
+  "title": "How fast can a driven Markov network oscillate? A four-state counterexample to the affine Karpelevich conjecture, and the exact dimension at which it fails",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "description": "<p><strong>Unrefereed research candidate.</strong> The eigenvalues of a continuous-time Markov rate matrix set how fast its distribution relaxes and how strongly it can oscillate. Xu, Kolchinsky, Delvenne and Ito (Phys. Rev. Lett. 135, 257102, 2025; Supplement Eq. (S3), read on arXiv:2507.08938v2) conjectured that these eigenvalues fill the classical Karpelevich region of stochastic matrices, stretched by the largest escape rate and flattened vertically by a factor set by the largest cycle affinity per step.</p><p>This package refutes that conjecture. An integer four-state rate matrix, with about 8.4 k<sub>B</sub>T of driving around its strongest cycle, has the eigenvalue &minus;4745 + 450&radic;3 i, whose rescaled image lies 0.0087 outside the region; one integer inequality proves it. For at most three states the containment holds, so four is the smallest failing size. The mechanism is weak resetting: it moves eigenvalues by O(&epsilon;) but relaxes the affinity factor by order &epsilon;<sup>2/3</sup>. This gives counterexamples near a whole boundary arc in four states, an explicit interval 0 &lt; &epsilon; &le; 1/100, exactly certified five- and six-state instances (data printed in an appendix and re-checked by a stand-alone checker), and an asymptotic construction in every dimension n &ge; 4.</p><p>Scope: every counterexample uses the complete graph. Whether the conjecture holds for single-cycle networks, the setting in which it was tested, remains open; a small numerical search found no violation, which is evidence, not proof. The violations are thin. The proved affinity ellipse and Farey-polygon bounds are unaffected.</p><p>The archive contains the 20-page manuscript (PDF and LaTeX), standard-library Python verifiers, exact JSON receipts and certificate data, a stand-alone certificate checker, semantic negative controls, CI and SHA-256 sums. Assurance boundary: written proofs; exact and interval-arithmetic certificates; a producer-side replay from a clean copy; internal AI-assisted review, including correctness audits by a different model before and after revision, a targeted proof audit and a verification re-review. This is not peer review, independent reproduction or formal verification. Creator: Anonymous. Prose, manuscript and data CC0-1.0; code MIT.</p>",
+  "creators": [
+    {
+      "name": "Anonymous"
+    }
+  ],
+  "version": "1.0.0-candidate",
+  "doi": "10.5281/zenodo.23687327",
+  "publication_date": "2026-10-27",
+  "access_right": "open",
+  "license": "cc-zero",
+  "keywords": [
+    "Markov rate matrix",
+    "Karpelevich region",
+    "cycle affinity",
+    "stochastic thermodynamics",
+    "eigenvalue bounds",
+    "counterexample",
+    "resetting",
+    "exact certificate",
+    "interval arithmetic"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/ipitchford/affinity-karpelevich-threshold/tree/v1.0.0-candidate",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://evidencepress.org/releases/affinity-karpelevich-threshold/",
+      "relation": "isDocumentedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "10.1103/z4t2-18cx",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "arXiv:2507.08938",
+      "relation": "references",
+      "scheme": "arxiv"
+    },
+    {
+      "identifier": "10.1016/j.laa.2017.01.009",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1103/PhysRevLett.131.077101",
+      "relation": "references",
+      "scheme": "doi"
+    }
+  ],
+  "notes": "Original code (code/*.py, negative_controls.py, CI workflow) is released under the MIT licence; see LICENSES.md in the archive. The short verbatim quotation of Supplement Eq. (S3) remains the source authors' text."
+}

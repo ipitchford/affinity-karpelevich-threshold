@@ -1,0 +1,97 @@
+{
+ "schemaVersion": "1.0",
+ "release": "affinity-karpelevich-threshold",
+ "version": "1.0.0-candidate",
+ "doi": "10.5281/zenodo.23687327",
+ "status": "unrefereed research candidate; internal AI-assisted review only",
+ "target": {
+  "citation": "Xu, Kolchinsky, Delvenne & Ito (2025), Phys. Rev. Lett. 135, 257102, Supplement Eq. (S3)",
+  "doi": "10.1103/z4t2-18cx",
+  "sourceVersionRead": "arXiv:2507.08938v2"
+ },
+ "claims": [
+  {
+   "id": "S3-implies-C",
+   "statement": "Supplement Eq. (S3) implies that every eigenvalue lambda of an irreducible n-state rate matrix gives zeta = 1 + Re(lambda)/alpha + i Im(lambda)/(alpha beta') in the Karpelevich region Omega_n, under either reading of its quantifiers.",
+   "status": "proved",
+   "location": "Proposition 2.1",
+   "evidence": [
+    "paper/affinity_karpelevich.pdf"
+   ]
+  },
+  {
+   "id": "four-state-failure",
+   "statement": "The integer rate matrix Q_w has eigenvalue -4745 + 450 sqrt(3) i whose rescaled image lies outside Omega_4, so (S3) is false.",
+   "status": "proved",
+   "location": "Theorem 3.1",
+   "evidence": [
+    "paper/affinity_karpelevich.pdf",
+    "receipts/affine_counterexample_verification.json",
+    "receipts/karpelevich_audit_result.json"
+   ]
+  },
+  {
+   "id": "three-states-hold",
+   "statement": "Containment holds for every irreducible bidirectional rate matrix on at most three states, so four is the smallest failing dimension.",
+   "status": "proved",
+   "location": "Theorem 4.1",
+   "dependsOn": "sector bound of Ohga, Ito & Kolchinsky (2023), Eq. (10)",
+   "evidence": [
+    "paper/affinity_karpelevich.pdf"
+   ]
+  },
+  {
+   "id": "arc-family",
+   "statement": "Counterexamples exist near every point of the open left boundary arc of Omega_4 (resetting family, epsilon small).",
+   "status": "proved",
+   "location": "Theorem 5.1",
+   "evidence": [
+    "paper/affinity_karpelevich.pdf"
+   ]
+  },
+  {
+   "id": "uniform-interval",
+   "statement": "For a = 2/3, t = 14/27 every 0 < epsilon <= 1/100 gives a counterexample, and there is an open set of positive-rate counterexamples.",
+   "status": "proved",
+   "location": "Theorem 6.1, Corollary 6.2",
+   "evidence": [
+    "paper/affinity_karpelevich.pdf"
+   ]
+  },
+  {
+   "id": "all-dimensions",
+   "statement": "For every n >= 4 there are rate matrices violating containment (fix n, then t in (0, eta_n), then epsilon < epsilon_0(n,t); thresholds non-explicit).",
+   "status": "proved",
+   "location": "Theorem 7.4",
+   "evidence": [
+    "paper/affinity_karpelevich.pdf",
+    "receipts/all_dimensions_audit_result.json"
+   ]
+  },
+  {
+   "id": "certified-5-6",
+   "statement": "Q_{5,3/5,1/40000} and Q_{6,1/2,1/8000} violate containment.",
+   "status": "certified-exact-computation",
+   "location": "Theorem 7.6, Appendix A",
+   "evidence": [
+    "receipts/higher_dimension_certificates.json",
+    "receipts/exterior_certificates.json",
+    "code/check_exterior_certificate.py"
+   ]
+  },
+  {
+   "id": "epsilon-scale",
+   "statement": "At n = 5, t = 1/20 the radial margin becomes positive from about epsilon = e^-16.3 and the triangle dominates near e^-18 = t^6.",
+   "status": "numerical",
+   "location": "Remark 7.5"
+  },
+  {
+   "id": "single-cycle",
+   "statement": "Whether containment holds for single-cycle networks.",
+   "status": "open",
+   "location": "Open problem 8.1",
+   "note": "multistart search on 4- and 5-state rings found no violation; evidence only"
+  }
+ ],
+ "scope": "All counterexamples use the complete graph. The proved affinity ellipse and Farey-polygon bounds are unaffected."
+}

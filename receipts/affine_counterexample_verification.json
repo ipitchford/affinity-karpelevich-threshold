@@ -1,0 +1,522 @@
+{
+  "status": "PASS",
+  "proof_arithmetic": "exact Python Fraction and integer arithmetic",
+  "mathematical_input": "Karpelevich n=4 left-hand boundary formula",
+  "matrix": [
+    [
+      -2768,
+      2727,
+      27,
+      14
+    ],
+    [
+      1427,
+      -2768,
+      1327,
+      14
+    ],
+    [
+      1327,
+      27,
+      -2768,
+      1414
+    ],
+    [
+      27,
+      27,
+      2727,
+      -2781
+    ]
+  ],
+  "alpha": 2781,
+  "stationary_distribution": [
+    "27/95",
+    "27/95",
+    "27/95",
+    "14/95"
+  ],
+  "eigenvalues": [
+    "0",
+    "-1595",
+    "-4745 + 450*sqrt(3)*i",
+    "-4745 - 450*sqrt(3)*i"
+  ],
+  "characteristic_coefficients_ascending": [
+    "0",
+    "36880427375",
+    "38259075",
+    "11085",
+    "1"
+  ],
+  "cycles": [
+    {
+      "cycle": [
+        1,
+        2,
+        3
+      ],
+      "length": 3,
+      "max_forward_reverse_ratio": "177853829/38529",
+      "ratio_below_19_power_length": true
+    },
+    {
+      "cycle": [
+        1,
+        2,
+        4
+      ],
+      "length": 3,
+      "max_forward_reverse_ratio": "2727/1427",
+      "ratio_below_19_power_length": true
+    },
+    {
+      "cycle": [
+        1,
+        3,
+        4
+      ],
+      "length": 3,
+      "max_forward_reverse_ratio": "1327/27",
+      "ratio_below_19_power_length": true
+    },
+    {
+      "cycle": [
+        2,
+        3,
+        4
+      ],
+      "length": 3,
+      "max_forward_reverse_ratio": "1327/27",
+      "ratio_below_19_power_length": true
+    },
+    {
+      "cycle": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "length": 4,
+      "max_forward_reverse_ratio": "134027/1427",
+      "ratio_below_19_power_length": true
+    },
+    {
+      "cycle": [
+        1,
+        2,
+        4,
+        3
+      ],
+      "length": 4,
+      "max_forward_reverse_ratio": "134027/1427",
+      "ratio_below_19_power_length": true
+    },
+    {
+      "cycle": [
+        1,
+        3,
+        2,
+        4
+      ],
+      "length": 4,
+      "max_forward_reverse_ratio": "1760929/729",
+      "ratio_below_19_power_length": true
+    }
+  ],
+  "dominant_cycle": [
+    1,
+    2,
+    3
+  ],
+  "dominant_cycle_ratio": "177853829/38529",
+  "beta_upper": "9/10",
+  "transformed_x": "-1964/2781",
+  "transformed_y_squared_lower_bound": "250000/2577987",
+  "A": "1556855/859329",
+  "B": "7856/2781",
+  "C": "1147/2781",
+  "positive_rational_square_margin": "19884434701/2215338990723",
+  "fingerprints": [
+    {
+      "epsilon": "1/10",
+      "matrix": [
+        [
+          -338,
+          297,
+          27,
+          14
+        ],
+        [
+          167,
+          -338,
+          157,
+          14
+        ],
+        [
+          157,
+          27,
+          -338,
+          154
+        ],
+        [
+          27,
+          27,
+          297,
+          -351
+        ]
+      ],
+      "time_scale": "270",
+      "characteristic_coefficients_ascending": [
+        "0",
+        "78320375",
+        "594075",
+        "1365",
+        "1"
+      ],
+      "dimension": 4,
+      "rank": 3,
+      "trace": -1365,
+      "determinant": "0",
+      "row_sums": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sorted_entries": [
+        -351,
+        -338,
+        -338,
+        -338,
+        14,
+        14,
+        27,
+        27,
+        27,
+        27,
+        154,
+        157,
+        157,
+        167,
+        297,
+        297
+      ],
+      "canonical_matrix_sha256_under_transpose_and_relabelling": "2f62e12339da03efda585d5327d9debf66a5756aa7af8739c6d32132b1a44caa",
+      "cycle_ratios": [
+        {
+          "cycle": [
+            1,
+            2,
+            3
+          ],
+          "ratio": "271139/4509"
+        },
+        {
+          "cycle": [
+            1,
+            2,
+            4
+          ],
+          "ratio": "297/167"
+        },
+        {
+          "cycle": [
+            1,
+            3,
+            4
+          ],
+          "ratio": "157/27"
+        },
+        {
+          "cycle": [
+            2,
+            3,
+            4
+          ],
+          "ratio": "157/27"
+        },
+        {
+          "cycle": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "ratio": "1727/167"
+        },
+        {
+          "cycle": [
+            1,
+            2,
+            4,
+            3
+          ],
+          "ratio": "1727/167"
+        },
+        {
+          "cycle": [
+            1,
+            3,
+            2,
+            4
+          ],
+          "ratio": "24649/729"
+        }
+      ]
+    },
+    {
+      "epsilon": "1/100",
+      "matrix": [
+        [
+          -2768,
+          2727,
+          27,
+          14
+        ],
+        [
+          1427,
+          -2768,
+          1327,
+          14
+        ],
+        [
+          1327,
+          27,
+          -2768,
+          1414
+        ],
+        [
+          27,
+          27,
+          2727,
+          -2781
+        ]
+      ],
+      "time_scale": "2700",
+      "characteristic_coefficients_ascending": [
+        "0",
+        "36880427375",
+        "38259075",
+        "11085",
+        "1"
+      ],
+      "dimension": 4,
+      "rank": 3,
+      "trace": -11085,
+      "determinant": "0",
+      "row_sums": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sorted_entries": [
+        -2781,
+        -2768,
+        -2768,
+        -2768,
+        14,
+        14,
+        27,
+        27,
+        27,
+        27,
+        1327,
+        1327,
+        1414,
+        1427,
+        2727,
+        2727
+      ],
+      "canonical_matrix_sha256_under_transpose_and_relabelling": "7bd0874488b70e6f4b10c3578816799eb63a332e4fab33937c85c5f24ec6543d",
+      "cycle_ratios": [
+        {
+          "cycle": [
+            1,
+            2,
+            3
+          ],
+          "ratio": "177853829/38529"
+        },
+        {
+          "cycle": [
+            1,
+            2,
+            4
+          ],
+          "ratio": "2727/1427"
+        },
+        {
+          "cycle": [
+            1,
+            3,
+            4
+          ],
+          "ratio": "1327/27"
+        },
+        {
+          "cycle": [
+            2,
+            3,
+            4
+          ],
+          "ratio": "1327/27"
+        },
+        {
+          "cycle": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "ratio": "134027/1427"
+        },
+        {
+          "cycle": [
+            1,
+            2,
+            4,
+            3
+          ],
+          "ratio": "134027/1427"
+        },
+        {
+          "cycle": [
+            1,
+            3,
+            2,
+            4
+          ],
+          "ratio": "1760929/729"
+        }
+      ]
+    },
+    {
+      "epsilon": "1/1000",
+      "matrix": [
+        [
+          -27068,
+          27027,
+          27,
+          14
+        ],
+        [
+          14027,
+          -27068,
+          13027,
+          14
+        ],
+        [
+          13027,
+          27,
+          -27068,
+          14014
+        ],
+        [
+          27,
+          27,
+          27027,
+          -27081
+        ]
+      ],
+      "time_scale": "27000",
+      "characteristic_coefficients_ascending": [
+        "0",
+        "33689685557375",
+        "3638547075",
+        "108285",
+        "1"
+      ],
+      "dimension": 4,
+      "rank": 3,
+      "trace": -108285,
+      "determinant": "0",
+      "row_sums": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sorted_entries": [
+        -27081,
+        -27068,
+        -27068,
+        -27068,
+        14,
+        14,
+        27,
+        27,
+        27,
+        27,
+        13027,
+        13027,
+        14014,
+        14027,
+        27027,
+        27027
+      ],
+      "canonical_matrix_sha256_under_transpose_and_relabelling": "12a11e5855c6980d0915f263190a84e525925b5b458f62f0df38bc9333ef1b8c",
+      "cycle_ratios": [
+        {
+          "cycle": [
+            1,
+            2,
+            3
+          ],
+          "ratio": "13067110133/29133"
+        },
+        {
+          "cycle": [
+            1,
+            2,
+            4
+          ],
+          "ratio": "2079/1079"
+        },
+        {
+          "cycle": [
+            1,
+            3,
+            4
+          ],
+          "ratio": "13027/27"
+        },
+        {
+          "cycle": [
+            2,
+            3,
+            4
+          ],
+          "ratio": "13027/27"
+        },
+        {
+          "cycle": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "ratio": "1003079/1079"
+        },
+        {
+          "cycle": [
+            1,
+            2,
+            4,
+            3
+          ],
+          "ratio": "1003079/1079"
+        },
+        {
+          "cycle": [
+            1,
+            3,
+            2,
+            4
+          ],
+          "ratio": "169702729/729"
+        }
+      ]
+    }
+  ]
+}

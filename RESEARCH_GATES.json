@@ -1,0 +1,208 @@
+{
+ "schemaVersion": "1.0",
+ "contributionMap": [
+  {
+   "claim": "Supplement Eq. (S3) of Xu et al. (2025) is false: the integer four-state rate matrix Q_w has a rescaled eigenvalue outside Omega_4.",
+   "unit": "statement",
+   "paperLocation": "abstract; Theorem 3.1",
+   "searches": [
+    {
+     "date": "2026-10-20",
+     "query": "\"2507.08938\" conjecture counterexample; \"Karpelevich\" \"thermodynamic\" \"conjecture\"; \"Karpelevich\" \"affinity\" counterexample; \"257102\" \"Karpelevich\" counterexample",
+     "corpus": "two live web engines, arXiv full text, publisher pages (notes/novelty_report_four_state.md)"
+    },
+    {
+     "date": "2026-10-27",
+     "query": "arXiv API: all:Karpelevich AND all:affinity; all:Karpelevich AND all:thermodynamic; abs:\"affine Karpelevich\"; all:Karpelevich AND all:\"rate matrices\"; Crossref query.bibliographic 'Karpelevich affinity counterexample', 'affine Karpelevich conjecture rate matrices' (from 2025-06-01)",
+     "corpus": "arXiv API, Crossref REST (retrospective publication-intake check; no relevant hit)"
+    }
+   ],
+   "closestPriorWork": "Xu et al. (2025) poses (S3); Kolchinsky, Ohga & Ito (2026, arXiv:2605.15884v3) prove the ellipse and a Farey polygon but do not address (S3); no refutation found",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Containment holds for n <= 3, so four is the smallest failing dimension.",
+   "unit": "proof",
+   "paperLocation": "Theorem 4.1",
+   "searches": [
+    {
+     "date": "2026-10-20",
+     "query": "\"2507.08938\" conjecture counterexample; \"Karpelevich\" \"thermodynamic\" \"conjecture\"; \"Karpelevich\" \"affinity\" counterexample; \"257102\" \"Karpelevich\" counterexample",
+     "corpus": "two live web engines, arXiv full text, publisher pages (notes/novelty_report_four_state.md)"
+    }
+   ],
+   "closestPriorWork": "Short corollary of the sector bound of Barato & Seifert (2017), proved by Ohga, Ito & Kolchinsky (2023) Eq. (10); stated as such",
+   "verdict": "partially-known-cited"
+  },
+  {
+   "claim": "Failure in every dimension n >= 4 via boundary-realising matrices plus weak resetting, with a unique critical triangle of valuation mean 2/3.",
+   "unit": "statement",
+   "paperLocation": "Theorem 7.4, Lemmas 7.1-7.3",
+   "searches": [
+    {
+     "date": "2026-10-20",
+     "query": "Karpelevich \"resetting\" spectrum; \"Type II\" \"Type III\" \"Ito polynomials\"; \"maximum cycle mean\" \"resetting\" Markov spectrum; \"affinity\" \"Karpelevich region\" counterexample",
+     "corpus": "two live web engines, arXiv, publisher pages (notes/novelty_report_all_dimensions.md)"
+    },
+    {
+     "date": "2026-10-27",
+     "query": "arXiv API: all:Karpelevich AND all:affinity; all:Karpelevich AND all:thermodynamic; abs:\"affine Karpelevich\"; all:Karpelevich AND all:\"rate matrices\"; Crossref query.bibliographic 'Karpelevich affinity counterexample', 'affine Karpelevich conjecture rate matrices' (from 2025-06-01)",
+     "corpus": "arXiv API, Crossref REST (retrospective publication-intake check; no relevant hit)"
+    }
+   ],
+   "closestPriorWork": "Johnson & Paparella (2017) Type II/III realising matrices and Rose et al. (2018) resetting shift are known ingredients, cited",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Mechanism: resetting moves eigenvalues by O(eps) while the affinity factor relaxes by order eps^(2/3) (rank-one stationary resetting plus maximum mean cycle affinity).",
+   "unit": "method",
+   "paperLocation": "Sections 1.3, 5, 7.2",
+   "searches": [
+    {
+     "date": "2026-10-20",
+     "query": "\"Karpelevich\" \"resetting\"; \"Spectral properties of simple classical and quantum reset processes\"; \"maximum cycle mean\" \"resetting\" Markov spectrum",
+     "corpus": "web engines, arXiv, publisher abstract"
+    }
+   ],
+   "closestPriorWork": "Rose et al. (2018): uniform spectral translation under resetting; PageRank-style teleportation. The affinity-scaling combination was not found",
+   "verdict": "partially-known-cited"
+  },
+  {
+   "claim": "Radial exterior test: a box W lies outside Omega_n if no Ito boundary polynomial vanishes at sigma*w, w in W, 1 <= sigma <= S (star shape plus Karpelevich boundary), used as an interval-arithmetic certification protocol.",
+   "unit": "method",
+   "paperLocation": "Lemmas 2.3-2.5, Theorem 7.6, Appendix A",
+   "searches": [
+    {
+     "date": "2026-10-27",
+     "query": "arXiv API all:Karpelevich AND all:\"rate matrices\"; Karpelevich interval arithmetic certificate (web)",
+     "corpus": "arXiv API"
+    }
+   ],
+   "closestPriorWork": "Elementary consequence of star-shapedness and Ito's boundary form; the stationary-projection interpolation is a standard device. Presented as a protocol, not a new theorem",
+   "verdict": "known-cited"
+  },
+  {
+   "claim": "The four-state boundary family (z^2-t)^2-(1-t)^2 z is the Johnson-Paparella Type II arc between -1 and e^(2 pi i/3).",
+   "unit": "identification",
+   "paperLocation": "Section 5.1, Lemma 7.1",
+   "searches": [
+    {
+     "date": "2026-10-20",
+     "query": "\"8z^6\" \"12z^4\" \"Karpelevich\"; \"z(z^2\" \"Karpelevich\"; \"Type II\" \"Type III\" \"Ito polynomials\"",
+     "corpus": "web engines; Johnson & Paparella full PDF arXiv:1611.06970v2"
+    }
+   ],
+   "closestPriorWork": "Johnson & Paparella (2017) Theorem 3.2; Kirkland & Smigoc (2022)",
+   "verdict": "known-cited"
+  }
+ ],
+ "sourcesReadInFull": [
+  {
+   "citation": "Xu, Kolchinsky, Delvenne & Ito (2025), PRL 135, 257102; arXiv:2507.08938v2",
+   "usedFor": "the refuted statement (S3), definitions of alpha and beta'",
+   "readWhat": "full text; LaTeX source of Supplement I.2, Eqs. (S2)-(S3)",
+   "date": "2026-10-27",
+   "evidenceLocator": "https://arxiv.org/abs/2507.08938v2, Supplement I.2; quoted verbatim in paper Section 2.2"
+  },
+  {
+   "citation": "Johnson & Paparella (2017), LAA 520, 1-15",
+   "usedFor": "realising matrices; Type II/III cases; Theorem 2.1 restatement of Karpelevich",
+   "readWhat": "Theorems 2.1 and 3.2 with proofs",
+   "date": "2026-10-20",
+   "evidenceLocator": "https://arxiv.org/pdf/1611.06970v2; notes/novelty_report_all_dimensions.md item 1"
+  },
+  {
+   "citation": "Kolchinsky, Ohga & Ito (2026), arXiv:2605.15884v3",
+   "usedFor": "closest current work; ellipse proof; Farey polygon",
+   "readWhat": "full text, Eq. (8), Theorems 3-5 and discussion",
+   "date": "2026-10-20",
+   "evidenceLocator": "https://arxiv.org/html/2605.15884v3; notes/novelty_report_four_state.md"
+  },
+  {
+   "citation": "Ohga, Ito & Kolchinsky (2023), PRL 131, 077101",
+   "usedFor": "sector bound in Theorem 4.1",
+   "readWhat": "Eq. (10) and its hypotheses (as cited in the verification re-review)",
+   "date": "2026-10-27",
+   "evidenceLocator": "https://doi.org/10.1103/PhysRevLett.131.077101, Eq. (10)"
+  },
+  {
+   "citation": "Rose et al. (2018), PRE 98, 022129",
+   "usedFor": "resetting spectral shift (known ingredient)",
+   "readWhat": "abstract and the shift result",
+   "date": "2026-10-20",
+   "evidenceLocator": "https://arxiv.org/pdf/1806.01298"
+  }
+ ],
+ "limitationTriage": [
+  {
+   "limitation": "Single-cycle networks (Open problem 8.1)",
+   "closingQuestion": "Does a known theorem cover rings, or can a cheap search produce a ring counterexample?",
+   "triedOrSearched": "Mechanism shown not to apply; multistart search over 4- and 5-state rings, 400 starts each, no violation; Verbeken-Ginis and Xu-Meng read for scope",
+   "estimatedCost": "open research problem; days or more",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Needs a new proof or a new mechanism",
+   "whyNotClosedNow": "Not cheap"
+  },
+  {
+   "limitation": "Explicit eta_n and epsilon_0(n,t) (Open problem 8.3)",
+   "closingQuestion": "Can the asymptotic constants be made explicit by a short computation?",
+   "triedOrSearched": "Remark 7.5 gives the scales; certified n = 5, 6 instances answer the practical concern",
+   "estimatedCost": "several hours of careful estimates per n",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Requires uniform error bounds across all competing cycles",
+   "whyNotClosedNow": "Not cheap"
+  },
+  {
+   "limitation": "True eigenvalue region for given n, alpha, beta (Open problem 8.2)",
+   "closingQuestion": "Is there a known characterisation?",
+   "triedOrSearched": "Kolchinsky et al. 2026 and Xu-Meng 2026 read; none gives it",
+   "estimatedCost": "open research problem",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Open research question",
+   "whyNotClosedNow": "Not cheap"
+  },
+  {
+   "limitation": "Theorem 4.1 depends on the cited sector bound",
+   "closingQuestion": "Is the cited statement exactly the form used?",
+   "triedOrSearched": "Re-review checked Ohga et al. and the Kolchinsky et al. v3 description; proof audit confirmed the derivation given the bound",
+   "estimatedCost": "done",
+   "cheap": true,
+   "decision": "CLOSED",
+   "reasonOpen": "",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "Certificate for n = 5, 6 not checkable from the paper",
+   "closingQuestion": "Can the data be printed and checked by a small independent checker?",
+   "triedOrSearched": "Appendix A added; check_exterior_certificate.py written and passed; negative controls added",
+   "estimatedCost": "about 1 hour",
+   "cheap": true,
+   "decision": "CLOSED",
+   "reasonOpen": "",
+   "whyNotClosedNow": ""
+  }
+ ],
+ "extensionScout": {
+  "by": "internal AI-assisted review panel and editor (agent)",
+  "date": "2026-10-27",
+  "proposals": [
+   "exactly certified n = 5, 6 instances",
+   "explicit thresholds",
+   "single-cycle proof",
+   "true region and beta-dependence",
+   "flux-weighted affinity statistic",
+   "Lean formalisation"
+  ],
+  "actions": [
+   "done (Theorem 7.6, Appendix A)",
+   "open problem 8.3",
+   "open problem 8.1 with numerical evidence",
+   "open problem 8.2",
+   "open problem 8.2",
+   "not done; exact scripts and a stand-alone checker instead"
+  ]
+ }
+}

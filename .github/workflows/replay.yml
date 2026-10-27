@@ -1,0 +1,25 @@
+# SPDX-License-Identifier: MIT
+name: Replay
+on:
+  push:
+  pull_request:
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Check SHA256SUMS
+        run: sha256sum -c SHA256SUMS
+      - name: Exact verifiers reproduce every receipt; certificates re-checked
+        run: python -B code/replay_all.py
+      - name: Semantic negative controls
+        run: python -B negative_controls.py
+      - name: Verifiers refuse python -O (they rely on assert)
+        run: |
+          if python -O -B code/certify_higher_dimensions.py --out "$RUNNER_TEMP/o"; then exit 1; fi
+      - name: Working tree unchanged
+        run: test -z "$(git status --porcelain)"

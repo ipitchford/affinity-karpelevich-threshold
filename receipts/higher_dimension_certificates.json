@@ -1,0 +1,631 @@
+{
+  "status": "PASS",
+  "python": "3.11.14",
+  "method": "exact rationals; outward-rounded rational intervals (fixed-point grid 2^-128); classical root-disc bound; radial exterior test against all Ito polynomials",
+  "instances": [
+    {
+      "dimension": 4,
+      "instance": "Q_w of Theorem 3.1 (cross-check)",
+      "Q": [
+        [
+          "-2768",
+          "2727",
+          "27",
+          "14"
+        ],
+        [
+          "1427",
+          "-2768",
+          "1327",
+          "14"
+        ],
+        [
+          "1327",
+          "27",
+          "-2768",
+          "1414"
+        ],
+        [
+          "27",
+          "27",
+          "2727",
+          "-2781"
+        ]
+      ],
+      "alpha": "2781",
+      "dominant_cycle_1_based": [
+        1,
+        2,
+        3
+      ],
+      "dominant_ratio": "177853829/38529",
+      "dominant_mean_log_ratio": "2.812435367342",
+      "runner_up_cycle_1_based": [
+        1,
+        3,
+        2,
+        4
+      ],
+      "runner_up_ratio": "1760929/729",
+      "runner_up_mean_log_ratio": "1.947419584164",
+      "number_of_unoriented_simple_cycles": 7,
+      "beta_bounds": [
+        "15650418768001762293596386119428013162328490179847760460285529/17650418768001762293596386119428013162328490179847760460285529",
+        "1565041876800176229359638611942801316232849017984776046028553/1765041876800176229359638611942801316232849017984776046028553"
+      ],
+      "beta_decimal": "0.886688240869062",
+      "zeta_box_decimal": {
+        "x": [
+          "-0.706220783890687",
+          "-0.706220783890687"
+        ],
+        "y": [
+          "0.316083047059632",
+          "0.316083047059632"
+        ]
+      },
+      "W_exact": {
+        "x": [
+          "-120157239955541737188433608233727574447/170141183460469231731687303715884105728",
+          "-240314479911083474376867216467455144149/340282366920938463463374607431768211456"
+        ],
+        "y": [
+          "53778743698516911759876502487270774057/170141183460469231731687303715884105728",
+          "107557487397033823519753004974541548115/340282366920938463463374607431768211456"
+        ]
+      },
+      "zeta_box_width_bound": "1.394e-35",
+      "sigma_max": "5169769940230951183/4000000000000000000",
+      "exterior_test": [
+        {
+          "farey_pair": [
+            "0",
+            "1/4"
+          ],
+          "q": 1,
+          "s": 4,
+          "floor_n_over_q": 4,
+          "boxes_visited": 21,
+          "terminal_boxes": 11,
+          "min_exclusion_margin": "1.768055e-03"
+        },
+        {
+          "farey_pair": [
+            "1/4",
+            "1/3"
+          ],
+          "q": 3,
+          "s": 4,
+          "floor_n_over_q": 1,
+          "boxes_visited": 7,
+          "terminal_boxes": 4,
+          "min_exclusion_margin": "7.687248e-02"
+        },
+        {
+          "farey_pair": [
+            "1/3",
+            "1/2"
+          ],
+          "q": 2,
+          "s": 3,
+          "floor_n_over_q": 2,
+          "boxes_visited": 135,
+          "terminal_boxes": 68,
+          "min_exclusion_margin": "8.695439e-05"
+        },
+        {
+          "farey_pair": [
+            "1/2",
+            "2/3"
+          ],
+          "q": 2,
+          "s": 3,
+          "floor_n_over_q": 2,
+          "boxes_visited": 135,
+          "terminal_boxes": 68,
+          "min_exclusion_margin": "8.695439e-05"
+        },
+        {
+          "farey_pair": [
+            "2/3",
+            "3/4"
+          ],
+          "q": 3,
+          "s": 4,
+          "floor_n_over_q": 1,
+          "boxes_visited": 7,
+          "terminal_boxes": 4,
+          "min_exclusion_margin": "7.687248e-02"
+        },
+        {
+          "farey_pair": [
+            "3/4",
+            "1"
+          ],
+          "q": 1,
+          "s": 4,
+          "floor_n_over_q": 4,
+          "boxes_visited": 21,
+          "terminal_boxes": 11,
+          "min_exclusion_margin": "1.768055e-03"
+        }
+      ],
+      "radial_margin_float_scale_only": "5.7910e-03",
+      "exterior_test_seconds_platform_dependent": 4.37,
+      "verdict": "zeta lies outside Omega_n: (C) fails for Q"
+    },
+    {
+      "dimension": 5,
+      "t": "3/5",
+      "epsilon": "1/40000",
+      "root_centre": [
+        "-1364992729783575580602216136754888815555776909580718988082285/1606938044258990275541962092341162602522202993782792835301376",
+        "398178175056774674863057881878734891570990524557825817951957/1606938044258990275541962092341162602522202993782792835301376"
+      ],
+      "root_radius": "1/500000000000000000000000000000000000000000000000000000000000",
+      "eigenvalue_shift": "100011/100000",
+      "Q": [
+        [
+          "-10001/10000",
+          "40001/40000",
+          "1/40000",
+          "1/40000",
+          "1/40000"
+        ],
+        [
+          "1/100000",
+          "-200017/200000",
+          "40001/40000",
+          "1/40000",
+          "1/40000"
+        ],
+        [
+          "1/100000",
+          "24001/40000",
+          "-200017/200000",
+          "16001/40000",
+          "1/40000"
+        ],
+        [
+          "1/100000",
+          "1/40000",
+          "1/40000",
+          "-200017/200000",
+          "40001/40000"
+        ],
+        [
+          "40001/100000",
+          "1/40000",
+          "1/40000",
+          "24001/40000",
+          "-200017/200000"
+        ]
+      ],
+      "alpha": "10001/10000",
+      "dominant_cycle_1_based": [
+        1,
+        2,
+        5
+      ],
+      "dominant_ratio": "1600080001",
+      "dominant_mean_log_ratio": "7.064439821856",
+      "runner_up_cycle_1_based": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "runner_up_ratio": "40966656409612160176001/576048001",
+      "runner_up_mean_log_ratio": "6.379068776029",
+      "number_of_unoriented_simple_cycles": 37,
+      "beta_bounds": [
+        "1168626588655512699487577289399125899238938477912784676246110913/1170626588655512699487577289399125899238938477912784676246110913",
+        "584313294327756349743788644699562949619469238956392338123055457/585313294327756349743788644699562949619469238956392338123055457"
+      ],
+      "beta_decimal": "0.998291513263596",
+      "zeta_box_decimal": {
+        "x": [
+          "-0.849362124948763",
+          "-0.849362124948763"
+        ],
+        "y": [
+          "0.248186133174560",
+          "0.248186133174560"
+        ]
+      },
+      "W_exact": {
+        "x": [
+          "-289022954250562855660191002779311025953/340282366920938463463374607431768211456",
+          "-72255738562640713915047750694827756487/85070591730234615865843651857942052864"
+        ],
+        "y": [
+          "21113341208398638187405553346515067939/85070591730234615865843651857942052864",
+          "42226682416797276374811106693030135879/170141183460469231731687303715884105728"
+        ]
+      },
+      "zeta_box_width_bound": "1.469e-38",
+      "sigma_max": "28252422707997040717/25000000000000000000",
+      "exterior_test": [
+        {
+          "farey_pair": [
+            "0",
+            "1/5"
+          ],
+          "q": 1,
+          "s": 5,
+          "floor_n_over_q": 5,
+          "boxes_visited": 25,
+          "terminal_boxes": 13,
+          "min_exclusion_margin": "1.824198e-02"
+        },
+        {
+          "farey_pair": [
+            "1/5",
+            "1/4"
+          ],
+          "q": 4,
+          "s": 5,
+          "floor_n_over_q": 1,
+          "boxes_visited": 7,
+          "terminal_boxes": 4,
+          "min_exclusion_margin": "2.566992e-02"
+        },
+        {
+          "farey_pair": [
+            "1/4",
+            "1/3"
+          ],
+          "q": 3,
+          "s": 4,
+          "floor_n_over_q": 1,
+          "boxes_visited": 7,
+          "terminal_boxes": 4,
+          "min_exclusion_margin": "7.261721e-02"
+        },
+        {
+          "farey_pair": [
+            "1/3",
+            "2/5"
+          ],
+          "q": 3,
+          "s": 5,
+          "floor_n_over_q": 1,
+          "boxes_visited": 1,
+          "terminal_boxes": 1,
+          "min_exclusion_margin": "7.637132e-02"
+        },
+        {
+          "farey_pair": [
+            "2/5",
+            "1/2"
+          ],
+          "q": 2,
+          "s": 5,
+          "floor_n_over_q": 2,
+          "boxes_visited": 307,
+          "terminal_boxes": 154,
+          "min_exclusion_margin": "8.777699e-07"
+        },
+        {
+          "farey_pair": [
+            "1/2",
+            "3/5"
+          ],
+          "q": 2,
+          "s": 5,
+          "floor_n_over_q": 2,
+          "boxes_visited": 307,
+          "terminal_boxes": 154,
+          "min_exclusion_margin": "8.777699e-07"
+        },
+        {
+          "farey_pair": [
+            "3/5",
+            "2/3"
+          ],
+          "q": 3,
+          "s": 5,
+          "floor_n_over_q": 1,
+          "boxes_visited": 1,
+          "terminal_boxes": 1,
+          "min_exclusion_margin": "7.637132e-02"
+        },
+        {
+          "farey_pair": [
+            "2/3",
+            "3/4"
+          ],
+          "q": 3,
+          "s": 4,
+          "floor_n_over_q": 1,
+          "boxes_visited": 7,
+          "terminal_boxes": 4,
+          "min_exclusion_margin": "7.261721e-02"
+        },
+        {
+          "farey_pair": [
+            "3/4",
+            "4/5"
+          ],
+          "q": 4,
+          "s": 5,
+          "floor_n_over_q": 1,
+          "boxes_visited": 7,
+          "terminal_boxes": 4,
+          "min_exclusion_margin": "2.566992e-02"
+        },
+        {
+          "farey_pair": [
+            "4/5",
+            "1"
+          ],
+          "q": 1,
+          "s": 5,
+          "floor_n_over_q": 5,
+          "boxes_visited": 25,
+          "terminal_boxes": 13,
+          "min_exclusion_margin": "1.824198e-02"
+        }
+      ],
+      "radial_margin_float_scale_only": "4.6688e-05",
+      "exterior_test_seconds_platform_dependent": 6.33,
+      "verdict": "zeta lies outside Omega_n: (C) fails for Q"
+    },
+    {
+      "dimension": 6,
+      "t": "1/2",
+      "epsilon": "1/8000",
+      "root_centre": [
+        "-1405925988550798938004119301164136760896295741542989741518381/1606938044258990275541962092341162602522202993782792835301376",
+        "202236283987962942996587631290827571140088949282185834032295/803469022129495137770981046170581301261101496891396417650688"
+      ],
+      "root_radius": "1/500000000000000000000000000000000000000000000000000000000000",
+      "eigenvalue_shift": "16011/16000",
+      "Q": [
+        [
+          "-1601/1600",
+          "8001/8000",
+          "1/8000",
+          "1/8000",
+          "1/8000",
+          "1/8000"
+        ],
+        [
+          "8001/16000",
+          "-16009/16000",
+          "4001/8000",
+          "1/8000",
+          "1/8000",
+          "1/8000"
+        ],
+        [
+          "1/16000",
+          "1/8000",
+          "-16009/16000",
+          "8001/8000",
+          "1/8000",
+          "1/8000"
+        ],
+        [
+          "1/16000",
+          "1/8000",
+          "4001/8000",
+          "-16009/16000",
+          "4001/8000",
+          "1/8000"
+        ],
+        [
+          "1/16000",
+          "1/8000",
+          "1/8000",
+          "1/8000",
+          "-16009/16000",
+          "8001/8000"
+        ],
+        [
+          "1/16000",
+          "4001/8000",
+          "1/8000",
+          "1/8000",
+          "4001/8000",
+          "-16009/16000"
+        ]
+      ],
+      "alpha": "1601/1600",
+      "dominant_cycle_1_based": [
+        2,
+        3,
+        6
+      ],
+      "dominant_ratio": "16008001",
+      "dominant_mean_log_ratio": "5.529533072571",
+      "runner_up_cycle_1_based": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "runner_up_ratio": "256128020001",
+      "runner_up_mean_log_ratio": "5.253788646911",
+      "number_of_unoriented_simple_cycles": 197,
+      "beta_bounds": [
+        "251026205597608518893528111842696792846340861731971392873656571/253026205597608518893528111842696792846340861731971392873656571",
+        "62756551399402129723382027960674198211585215432992848218414143/63256551399402129723382027960674198211585215432992848218414143"
+      ],
+      "beta_decimal": "0.992095680385056",
+      "zeta_box_decimal": {
+        "x": [
+          "-0.874425874457829",
+          "-0.874425874457829"
+        ],
+        "y": [
+          "0.253550827099820",
+          "0.253550827099820"
+        ]
+      },
+      "W_exact": {
+        "x": [
+          "-297551706257421405089668952259855843307/340282366920938463463374607431768211456",
+          "-148775853128710702544834476129927921651/170141183460469231731687303715884105728"
+        ],
+        "y": [
+          "21569718895072058098458530798288771361/85070591730234615865843651857942052864",
+          "43139437790144116196917061596577542723/170141183460469231731687303715884105728"
+        ]
+      },
+      "zeta_box_width_bound": "1.469e-38",
+      "sigma_max": "6864780988993527561/6250000000000000000",
+      "exterior_test": [
+        {
+          "farey_pair": [
+            "0",
+            "1/6"
+          ],
+          "q": 1,
+          "s": 6,
+          "floor_n_over_q": 6,
+          "boxes_visited": 19,
+          "terminal_boxes": 10,
+          "min_exclusion_margin": "3.206772e-02"
+        },
+        {
+          "farey_pair": [
+            "1/6",
+            "1/5"
+          ],
+          "q": 5,
+          "s": 6,
+          "floor_n_over_q": 1,
+          "boxes_visited": 3,
+          "terminal_boxes": 2,
+          "min_exclusion_margin": "2.670103e-01"
+        },
+        {
+          "farey_pair": [
+            "1/5",
+            "1/4"
+          ],
+          "q": 4,
+          "s": 5,
+          "floor_n_over_q": 1,
+          "boxes_visited": 7,
+          "terminal_boxes": 4,
+          "min_exclusion_margin": "1.076212e-01"
+        },
+        {
+          "farey_pair": [
+            "1/4",
+            "1/3"
+          ],
+          "q": 3,
+          "s": 4,
+          "floor_n_over_q": 2,
+          "boxes_visited": 15,
+          "terminal_boxes": 8,
+          "min_exclusion_margin": "2.127030e-02"
+        },
+        {
+          "farey_pair": [
+            "1/3",
+            "2/5"
+          ],
+          "q": 3,
+          "s": 5,
+          "floor_n_over_q": 2,
+          "boxes_visited": 7,
+          "terminal_boxes": 4,
+          "min_exclusion_margin": "8.339261e-02"
+        },
+        {
+          "farey_pair": [
+            "2/5",
+            "1/2"
+          ],
+          "q": 2,
+          "s": 5,
+          "floor_n_over_q": 3,
+          "boxes_visited": 521,
+          "terminal_boxes": 261,
+          "min_exclusion_margin": "4.433119e-06"
+        },
+        {
+          "farey_pair": [
+            "1/2",
+            "3/5"
+          ],
+          "q": 2,
+          "s": 5,
+          "floor_n_over_q": 3,
+          "boxes_visited": 521,
+          "terminal_boxes": 261,
+          "min_exclusion_margin": "4.433119e-06"
+        },
+        {
+          "farey_pair": [
+            "3/5",
+            "2/3"
+          ],
+          "q": 3,
+          "s": 5,
+          "floor_n_over_q": 2,
+          "boxes_visited": 7,
+          "terminal_boxes": 4,
+          "min_exclusion_margin": "8.339261e-02"
+        },
+        {
+          "farey_pair": [
+            "2/3",
+            "3/4"
+          ],
+          "q": 3,
+          "s": 4,
+          "floor_n_over_q": 2,
+          "boxes_visited": 15,
+          "terminal_boxes": 8,
+          "min_exclusion_margin": "2.127030e-02"
+        },
+        {
+          "farey_pair": [
+            "3/4",
+            "4/5"
+          ],
+          "q": 4,
+          "s": 5,
+          "floor_n_over_q": 1,
+          "boxes_visited": 7,
+          "terminal_boxes": 4,
+          "min_exclusion_margin": "1.076212e-01"
+        },
+        {
+          "farey_pair": [
+            "4/5",
+            "5/6"
+          ],
+          "q": 5,
+          "s": 6,
+          "floor_n_over_q": 1,
+          "boxes_visited": 3,
+          "terminal_boxes": 2,
+          "min_exclusion_margin": "2.670103e-01"
+        },
+        {
+          "farey_pair": [
+            "5/6",
+            "1"
+          ],
+          "q": 1,
+          "s": 6,
+          "floor_n_over_q": 6,
+          "boxes_visited": 19,
+          "terminal_boxes": 10,
+          "min_exclusion_margin": "3.206772e-02"
+        }
+      ],
+      "radial_margin_float_scale_only": "2.2100e-04",
+      "exterior_test_seconds_platform_dependent": 10.1,
+      "verdict": "zeta lies outside Omega_n: (C) fails for Q"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+Producer environment for release 1.0.0-candidate (27 October 2026)
+OS: macOS (Darwin 27.0.0), Apple silicon
+Python: 3.11.14 (via uv), run as: uv run python3 -I -B <script>
+Verifiers, checker, replay driver, negative controls: Python standard library only
+Figure script (illustration only): numpy 2.4.6, matplotlib 3.11.2
+TeX: pdfTeX 3.141592653-2.6-1.40.29 (TeX Live 2026), pdflatex run three times
+CI: GitHub Actions ubuntu-latest, Python 3.11 (.github/workflows/replay.yml)
+Do not use python -O: the verifiers rely on assert and refuse to run under -O.
+Decimal and timing fields in receipts may differ between platforms; all decisive fields are exact.
